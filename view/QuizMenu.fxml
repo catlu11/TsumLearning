@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuizController">
+   <children>
+      <Pane fx:id="tsumPane" layoutX="168.0" layoutY="153.0" prefHeight="225.0" prefWidth="213.0" />
+      <Text layoutX="425.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What do you want to do?" textAlignment="CENTER" wrappingWidth="329.21875">
+         <font>
+            <Font name="American Typewriter" size="52.0" />
+         </font>
+      </Text>
+      <Button layoutX="433.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleStudy" prefHeight="27.0" prefWidth="137.0" text="Start Studying!" />
+      <Button layoutX="579.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleEditTerms" prefHeight="27.0" prefWidth="98.0" text="Edit Terms" />
+      <Button layoutX="684.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleQuit" prefHeight="27.0" prefWidth="56.0" text="Quit" />
+   </children>
+</AnchorPane>

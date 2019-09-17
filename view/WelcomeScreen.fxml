@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.IntroController">
+   <children>
+      <Text layoutX="72.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Don't Kill Me" textAlignment="CENTER" wrappingWidth="462.21875" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="188.10399627685547">
+         <font>
+            <Font name="American Typewriter" size="74.0" />
+         </font>
+      </Text>
+      <Button fx:id="ready" layoutX="158.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleReady" prefHeight="27.0" prefWidth="257.0" text="Ready to begin?" />
+      <Pane fx:id="tsumPane" layoutX="589.0" layoutY="188.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

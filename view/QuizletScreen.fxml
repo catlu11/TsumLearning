@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuizController">
+   <children>
+      <SplitPane dividerPositions="0.3363028953229399" prefHeight="600.0" prefWidth="900.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane fx:id="tsumPane2" layoutX="43.0" layoutY="113.0" prefHeight="225.0" prefWidth="213.0" />
+                  <Text fx:id="nameLabel" layoutX="43.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Name&quot; the Tsum" textAlignment="CENTER" wrappingWidth="212.99999803304672">
+                     <font>
+                        <Font name="American Typewriter" size="26.0" />
+                     </font>
+                  </Text>
+                  <Pane fx:id="healthPane" layoutX="43.0" layoutY="350.0" prefHeight="40.0" prefWidth="213.0" />
+                  <Text fx:id="warning" layoutX="39.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The more answers you get wrong, the more you hurt &quot;name&quot;. Don't let &quot;name&quot; die!" wrappingWidth="220.21875">
+                     <font>
+                        <Font name="American Typewriter" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ouchie" fill="RED" layoutX="39.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Owie.">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.7181208053691275" orientation="VERTICAL" prefHeight="598.0" prefWidth="592.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="590.0">
+                           <children>
+                              <Text fx:id="definition" layoutX="70.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You monster. " wrappingWidth="450.349609375">
+                                 <font>
+                                    <Font name="American Typewriter" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="monstrosity" layoutX="243.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleMonstrosity" prefHeight="30.0" prefWidth="121.0" text="Get out of here." />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="321.0" prefWidth="402.0">
+                           <children>
+                              <TextField fx:id="answer" layoutX="119.0" layoutY="65.0" />
+                              <Label layoutX="58.0" layoutY="70.0" text="Answer:" />
+                              <Button fx:id="submit" layoutX="366.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="27.0" prefWidth="141.0" text="Submit" />
+                              <Button fx:id="giveUp" layoutX="366.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleGiveUp" prefHeight="27.0" prefWidth="141.0" text="I give up!" />
+                              <Button fx:id="exit" layoutX="366.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="27.0" prefWidth="141.0" text="Exit" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,2 +1,2 @@
 # TsumLearning
-Flashcard style learning game. A JavaFX experiment.
+Flashcard style learning game with cute blobs to motivate you. A JavaFX experiment.
